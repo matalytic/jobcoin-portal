@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans);
+@gray: #B4B4B4;
+@darker-gray: #838383;
+@border-style: 1px solid @gray;
+
+.bordered {
+  border: @border-style;
+  border-radius: 3px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+p, h2, h3 {
+  font-family: 'Lato', 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+input {
+  .bordered;
+  margin: 2px 0px 10px;
+  height: 24px;
+  width: 200px;
+}
+
+.submit-button {
+  background: @gray;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 11px;
+  width: 205px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.banner {
+  color: @gray;
+}

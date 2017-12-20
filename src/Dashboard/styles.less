@@ -1,0 +1,107 @@
+@import '../index';
+
+#navbar {
+  background: #fff;
+  border-bottom: @border-style;
+  z-index: 9;
+  top: 0px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+
+  .logo {
+    img {
+      opacity: 0.7;
+      width: 50px;
+      margin: 5px 18px;
+    }
+  }
+
+  .banner {
+    display: inline-block;
+    margin: 18px;
+    color: @darker-gray;
+    font-size: 20px;
+
+  }
+
+  #sign-out {
+    position: absolute;
+    cursor: pointer;
+    color: #0071E2;
+    right: 10px;
+    top: 6px;
+    padding: 16px;
+  }
+}
+
+#dashboard {
+  display: flex;
+
+  #sidebar {
+    width: 275px;
+    height: 60vh;
+    margin: 90px 10px 0px;
+
+    #balance {
+      .bordered;
+      color: @darker-gray;
+      padding: 15px 0px;
+
+      h3:first-child {
+        border-bottom: 1px solid @gray;
+        padding-bottom: 20px;
+      }
+    }
+
+    #send-form {
+      .bordered;
+      text-align: center;
+      padding: 15px 0px 20px;
+      margin-top: 20px;
+
+      p {
+        color: @darker-gray;
+        position: relative;
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-left: -110px;
+      }
+
+      p:first-child {
+        margin-left: -90px;
+      }
+
+      h3 {
+        color: @darker-gray;
+        border-bottom: @border-style;
+        padding-bottom: 20px;
+      }
+
+      span {
+        color: @darker-gray;
+        input {
+          width: 165px;
+        }
+      }
+    }
+  }
+
+  #graph {
+    .bordered;
+    flex-grow: 2;
+    height: 70vh;
+    margin: 90px 20px 10px;
+
+    h3 {
+      color: @gray;
+      margin-left: 20px;
+      float: left;
+    }
+
+    #graph-plot {
+      height: 60vh;
+      width: 100%;
+    }
+  }
+}

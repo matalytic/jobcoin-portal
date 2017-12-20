@@ -1,0 +1,70 @@
+@import '../index';
+@-webkit-keyframes blinker {
+  from {opacity: 0.4;}
+  to {opacity: 0.2;}
+}
+.blink {
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto;
+  width: 375px;
+
+  img {
+    .blink;
+    display: block;
+    opacity: 0.2;
+    width: 150px;
+    margin: 5px auto;
+  }
+
+  .banner {
+    margin: 60px auto;
+    font-size: 20px;
+    color: @gray;
+  }
+}
+
+#login-form {
+  .bordered;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    color: @gray;
+    margin-bottom: 5px;
+    margin-left: -105px;
+    font-size: 13px;
+  }
+
+  h3 {
+    border-bottom: @border-style;
+    color: @darker-gray;
+    margin: 0px;
+    padding: 20px 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 20px;
+  }
+
+  input {
+    margin-bottom: 20px;
+  }
+}
+
+/*Blinker by: https://gist.github.com/mugifly/5099109*/
