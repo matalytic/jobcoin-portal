@@ -16,7 +16,7 @@ e.g. http://localhost:8080
 
 ## Architecture ##
 
-## Built With
+### Built With
 
 **React** with scalability in mind
 **React-router** as an addition  to ease navigation and page direction
