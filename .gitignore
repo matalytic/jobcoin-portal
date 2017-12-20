@@ -5,6 +5,4 @@
 .DS_Store
 package-lock.json
 
-# /config.js
-
 npm-debug.log*
